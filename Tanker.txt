@@ -1,0 +1,100 @@
+La meg guide deg gjennom en logisk progresjon for å bygge finance trackeren, delt inn i faser:
+Fase 1: Fundament & Types
+Sett opp basis types først:
+Apply to Tanker.txt
+TransactionFilters
+Dette gir deg et solid typesystem å bygge på.
+
+Fase 2: Core Components & State
+Først, lag TransactionContext:
+Global state for transaksjoner
+CRUD operasjoner for transaksjoner
+Deretter, basis UI komponenter:
+TransactionForm (for å legge til transaksjoner)
+TransactionList (for å vise transaksjoner)
+Basic layout og navigasjon
+Dette gir deg mulighet til å:
+Legge til transaksjoner
+Se transaksjoner
+Teste at state management fungerer
+
+
+Fase 3: Dashboard & Summaries
+DashboardSummary:
+Total inntekt/utgift
+Nåværende balanse
+Enkle statistikker
+RecentTransactions:
+Liste over siste transaksjoner
+Quick-actions
+Dette gir brukeren en oversikt og basis funksjonalitet.
+
+
+Fase 4: Filtrering & Søk
+FilterSystem:
+Datofiltere
+Kategorifiltere
+Søkefunksjonalitet
+SortingSystem:
+Sortering etter dato
+Sortering etter beløp
+Sortering etter kategori
+Dette forbedrer brukeropplevelsen og gjør data mer tilgjengelig.
+
+
+Fase 5: Visualiseringer
+ChartComponents:
+Pie chart for kategorier
+Bar chart for månedlig oversikt
+Line chart for trender
+StatisticsComponents:
+Detaljerte analyser
+Kategori-breakdown
+Trendanalyser
+Dette gir visuell innsikt i økonomien.
+
+
+Fase 6: Settings & Customization
+CategoryManagement:
+CRUD for kategorier
+Farger og ikoner
+UserPreferences:
+Dark/light mode
+Valuta-preferanser
+Visningsalternativer
+Dette gir brukertilpasning og fleksibilitet.
+
+
+Fase 7: Polish & Enhancement
+ErrorHandling:
+Error boundaries
+Loading states
+Feedback til bruker
+Animations:
+Smooth transitions
+Loading skeletons
+Micro-interactions
+Responsive Design:
+Mobile optimization
+Tablet layout
+Desktop refinements
+Dette gir en polert, profesjonell følelse.
+
+
+For hver fase:
+Plan
+Definer nøyaktig hva som skal bygges
+Skriv types og interfaces
+Lag komponent-struktur
+Build
+Implementer basis funksjonalitet
+Legg til styling
+Implementer state management
+Test
+Test funksjonalitet
+Sjekk edge cases
+Verifiser types
+Refine
+Forbedre UX
+Optimaliser ytelse
+Legg til animations
