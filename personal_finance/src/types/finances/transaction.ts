@@ -7,15 +7,6 @@ export type Transaction = {
   date: Date;
   description: string;
   categoryId: string;
-  accountId: string;
-  createdAt: Date;
-  updatedAt: Date;
-};
-
-export type Category = {
-  id: string;
-  name: string;
-  type: TransactionType;
   createdAt: Date;
   updatedAt: Date;
 };
@@ -28,5 +19,5 @@ export type DateRange = {
 export type TransactionFilter = {
   dateRange: DateRange;
   categoryId: string;
-  accountId: string;
+  type: TransactionType;
 };
