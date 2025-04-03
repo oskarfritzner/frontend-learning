@@ -59,6 +59,9 @@
   .btn-primary {
     @apply bg-[hsl(var(--btn-primary))] text-[hsl(var(--btn-primary-foreground))] hover:bg-[hsl(var(--btn-primary-hover))] transition-colors;
   }
+  h4 {
+    @apply text-sm font-semibold text-gray-800;
+  }
 }
 
 /* Dark theme */

@@ -66,8 +66,8 @@ export default function CreateTransactionForm() {
 
          
     return (
-        <div className="p-6">
-            <h2 className="text-2xl font-semibold mb-6">New Transaction</h2>
+        <div className="">
+            <h4 className="mb-6">New Transaction</h4>
             <form onSubmit={handleSubmit} className="space-y-4">
                 {/* Amount Input */}
                 <div className="space-y-2">

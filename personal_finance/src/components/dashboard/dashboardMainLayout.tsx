@@ -1,10 +1,15 @@
-import { CategoryProvider} from "@/contexts/categoryContext";
+'use client'
+
+import { CategoryProvider } from "@/contexts/categoryContext";
 import { TransactionProvider } from "@/contexts/transactionContextType";
-import CreateTransactionForm from "../transaksjoner/transactions/createTransactionForm.tsx/createTransactionForm";
+import CreateTransactionForm from "../transaksjoner/createTransactionForm.tsx/createTransactionForm";
 import { ThemeToggle } from "../ThemeToggle";
 import KategoriGrid from "../transaksjoner/kategoriGrid/kategoriGrid";
 import TransactionListe from "../transaksjoner/transactionListe/transactionListe";
-export default function DashboardLayout() {
+import BarChart from '@/components/charts/barChart'
+
+
+export default function DashboardMainLayout() {
     return (
         <div className="min-h-screen bg-background p-4 md:p-8">
             <CategoryProvider>
@@ -21,7 +26,10 @@ export default function DashboardLayout() {
                         {/*Main content grids */}
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                             <CreateTransactionForm />
-                            <KategoriGrid />
+                            <div>
+                                <KategoriGrid />
+                                <BarChart />
+                            </div>
                             <TransactionListe />
                         </div>
                     </div>

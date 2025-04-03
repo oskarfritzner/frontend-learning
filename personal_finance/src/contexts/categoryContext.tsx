@@ -81,6 +81,7 @@ function CategoryProvider({ children }: { children: React.ReactNode }) {
       setIsLoading(false);
     }
   };
+  
 
   const value = {
     categories,

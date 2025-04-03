@@ -96,7 +96,15 @@ function TransactionProvider({ children }: { children: React.ReactNode }) {
     useEffect(() => {
         const savedTransactions = localStorage.getItem('transactions')
         if (savedTransactions) {
-            setTransactions(JSON.parse(savedTransactions))
+            const parsedTransactions = JSON.parse(savedTransactions);
+            // convert date strings back to Date
+            const transactionsWithDates = parsedTransactions.map((transaction: Transaction) => ({
+                ...transaction,
+                date: new Date(transaction.date),
+                createdAt: new Date(transaction.date),
+                updatedAt: new Date(transaction.updatedAt)
+            }));
+            setTransactions((transactionsWithDates))
         }
     }, []);
 
