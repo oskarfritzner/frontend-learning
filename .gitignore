@@ -6,6 +6,12 @@ node_modules
 # Testing
 coverage
 
+#node
+node_modules
+
+#package-lock.json
+package-lock.json
+
 # Next.js
 .next/
 out/
